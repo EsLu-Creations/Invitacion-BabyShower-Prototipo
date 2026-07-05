@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+  /* =========================================
+    PALETA DE COLORES LÚMERITZ
+  ========================================= */
+  --color-lumeritz-pearl: #fdfbf7;
+  --color-lumeritz-emerald: #1b3b36;
+  --color-lumeritz-gold: #c5a880;
+  --color-lumeritz-sage: #e8ede7;
+
+  /* =========================================
+    TIPOGRAFÍA
+  ========================================= */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  /* =========================================
+    ANIMACIONES
+  ========================================= */
+  --animate-fade-in: fade-in 1.2s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 1.2s ease-out forwards;
+  --animate-fade-in-soft: fade-in-soft 2s ease-out forwards;
+  --animate-subtle-zoom: subtle-zoom 12s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-sway: sway 8s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2s ease-in-out infinite alternate;
+  --animate-fade-in-up-strong: fade-in-up-strong 1s ease-out forwards;
+  --animate-tick: tick 0.4s ease;
+  --animate-overlay-shift: overlay-shift 6s ease-in-out infinite alternate;
+  --animate-bloom: bloom 1.8s ease-out forwards;
+  --animate-cinematic-rise: cinematic-rise 1.2s ease-out forwards;
+  --animate-cinematic-fade-out: cinematic-fade-out 0.8s ease forwards;
+  --animate-grow-line: grow-line 1.5s ease-out forwards;
+
+  /* =========================================
+    KEYFRAMES
+  ========================================= */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes grow-line {
+    from {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-soft {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes subtle-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.12);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes sway {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.08);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes fade-in-up-strong {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes tick {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes overlay-shift {
+    0% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes bloom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8) rotate(-10deg);
+    }
+    100% {
+      opacity: 0.25;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+
+  @keyframes cinematic-rise {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+      letter-spacing: -0.1em;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      letter-spacing: 0.15em;
+    }
+  }
+
+  @keyframes cinematic-fade-out {
+    to {
+      opacity: 0;
+      transform: scale(1.05);
+    }
+  }
+}
