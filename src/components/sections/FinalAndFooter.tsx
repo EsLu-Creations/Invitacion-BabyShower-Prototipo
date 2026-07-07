@@ -121,7 +121,7 @@ const FinalAndFooter = () => {
             <Sparkles className="h-4 w-4 text-lumeritz-gold transition-transform duration-300 group-hover:rotate-12" />
 
             <span className="font-serif text-2xl uppercase tracking-[0.35em] text-lumeritz-gold">
-              Lúmeritz
+              EsLu Creations
             </span>
 
             <Sparkles className="h-4 w-4 text-lumeritz-gold transition-transform duration-300 group-hover:-rotate-12" />
